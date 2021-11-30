@@ -1,10 +1,10 @@
 public class PassagirCarriage extends Carriage {
-    public PassagirCarriage() {
-        carriage();
-    }
 
-    @Override
-    public void carriage() {
+
+
+    public PassagirCarriage(int wheelset) {
+        super(wheelset);
         System.out.println("пассажирский вагон");
     }
+
 }

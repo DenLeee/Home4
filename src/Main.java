@@ -2,9 +2,9 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Train passagir1 = new Train(Lokomotiv.ELECTRO, new PassagirCarriage(), 12, "Питер - Москва");
+        Train passagir1 = new Train(Lokomotiv.ELECTRO, new PassagirCarriage(8), 12, "Питер - Москва");
 
-        Train cargo1 = new Train(Lokomotiv.FUEL, new CargoCarriage(), 25, "ДонБас - ЕКБ");
+        Train cargo1 = new Train(Lokomotiv.FUEL, new CargoCarriage(10), 25, "ДонБас - ЕКБ");
 
         Ticked ticked1 = new Ticked("Денис", "Заргишиев", 32, "паспорт", passagir1);
 

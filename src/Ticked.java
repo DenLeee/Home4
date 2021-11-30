@@ -21,6 +21,7 @@ public class Ticked {
                 "имя='" + name + '\'' +
                 ", Фамилия='" + secondName + '\'' +
                 ", document='" + document + '\'' +
+                ", '" + train.getWay() + '\'' +
                 ", поезд №'" + train.getNumber() + '\'' +
                 '}';
     }

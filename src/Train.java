@@ -1,9 +1,18 @@
-public class Train {
+public class Train implements Moveable {
     private int number;   // номер
     private Lokomotiv lokomotiv;
     private Carriage type;        // тип (грузовой, пассажирский)
     private int countCarriege;       //количесвто вагонов
     private String way;     // маршрут от куда - куда
+
+    public Train(Lokomotiv lokomotiv, Carriage type, int countCarriege, String way) {
+        this.number ++;
+        this.lokomotiv = lokomotiv;
+        this.type = type;
+        this.countCarriege = countCarriege;
+        this.way = way;
+        System.out.println("Поезд готов!");
+    }
 
 
     public int getNumber() {
@@ -26,12 +35,5 @@ public class Train {
         return way;
     }
 
-    public Train(Lokomotiv lokomotiv, Carriage type, int countCarriege, String way) {
-        this.number ++;
-        this.lokomotiv = lokomotiv;
-        this.type = type;
-        this.countCarriege = countCarriege;
-        this.way = way;
-        System.out.println("Поезд готов!");
-    }
+
 }

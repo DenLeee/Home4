@@ -1,10 +1,9 @@
 public class CargoCarriage extends Carriage {
-    public CargoCarriage() {
-        carriage();
-    }
 
-    @Override
-    public void carriage() {
+    public CargoCarriage(int wheelset) {
+        super(wheelset);
         System.out.println("Грузовой вагон");
     }
+
+
 }
